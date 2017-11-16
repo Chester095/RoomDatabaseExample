@@ -22,7 +22,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
-        db = Room.databaseBuilder(getApplicationContext(), DatabaseHelper.class, "favorite-database")
+        db = Room.databaseBuilder(getApplicationContext(), DatabaseHelper.class, "data-database")
                 .allowMainThreadQueries()
                 .build();
     }
