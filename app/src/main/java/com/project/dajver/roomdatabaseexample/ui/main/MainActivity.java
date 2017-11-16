@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements SomeDataRecyclerA
 
     @Override
     public void onDelete(DataModel dataModel) {
-        DatabaseHelper databaseHelper = App.getInstance().getDatabaseInstance();
         databaseHelper.getDataDao().delete(dataModel);
     }
 }
